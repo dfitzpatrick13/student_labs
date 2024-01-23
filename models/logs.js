@@ -40,6 +40,5 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// Other routes...
 
 module.exports = router;

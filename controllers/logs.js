@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Log = require('../models/logs');
 
-// Other routes...
 
 // Put route
 router.put('/:id', async (req, res) => {
