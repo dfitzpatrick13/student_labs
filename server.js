@@ -16,10 +16,9 @@ mongoose.connect('mongodb://localhost:27017/captains_log', { useNewUrlParser: tr
 
 // Routes
 const logsController = require('./controllers/logs');
-app.use('/', logsController);
+app.use('/logs', logsController);
 
-const foodLogsController = require('./controllers/foodlogs');
-app.use('/', foodLogsController);
+// Other routes...
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
